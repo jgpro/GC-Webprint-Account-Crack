@@ -11,6 +11,7 @@ You can download the ZIP [file here](https://github.com/jgpro/GC-Webprint-Accoun
 3. Go To The Extensions Menu in Chrome
 4. Enable Developer Tools
 ![Image Of Dev Tools](https://i.gyazo.com/07291268825dfdcb09ac98b98440cd33.png)
+
 4. Click 'Load Unpacked' and choose the folder 'WebprintAccountCrack' which is found inside the ZIP file you extracted.
 5. The extension should be install, you can access it from the WebPrint Pages by clicking on it's icon
 ![Image Of Extension Icon](https://i.gyazo.com/49200f94734e11d4bd4b3258933a8bf3.png)
