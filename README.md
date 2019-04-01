@@ -3,7 +3,7 @@
 Webprint Account Crack is a tool that can help you log into a large list of printing accounts, and can also help you generate your own lists.
 
 ## Download
-You can download the ZIP file here
+You can download the ZIP [file here](https://github.com/jgpro/GC-Webprint-Account-Crack/raw/master/releases/WebprintAccountCrack.zip)
 
 ## Instalation
 1. Download the ZIP file
