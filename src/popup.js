@@ -19,17 +19,13 @@ chrome.storage.sync.get('savedKeys', (data) => {
 });
 
 login.onclick = () => {
-  alert(`ID: ${select.options[select.selectedIndex].text}, PIN: ${select.value}`);
-  
   chrome.tabs.executeScript(
-    tabs[0].id,
     {
       code: `document.getElementById('UserName').value = ${select.options[select.selectedIndex].text}; document.getElementById('btnSubmit').click();`
     }
   );
   setTimeout(() => {
     chrome.tabs.executeScript(
-      tabs[0].id,
       {
         code: `document.getElementById('Password').value = ${select.value}; document.getElementById('btnSubmit').click();`
       }
@@ -64,25 +60,13 @@ bruteForce.onclick = () => {
         chrome.storage.sync.set({bruteForce: false}, function() {
           console.log('bruteForce: ' + false);
         });
-        chrome.tabs.executeScript(
-          tabs[0].id,
-          {code: 
-            `
-            active = false;
-            `});
+        chrome.tabs.executeScript(tabs[0].id, {code: `active = false;`});
       } else {
         bruteForce.innerHTML = 'Stop';
         chrome.storage.sync.set({bruteForce: true}, function() {
           console.log('bruteForce: ' + true);
         });
-        chrome.tabs.executeScript(
-          tabs[0].id,
-          {code: 
-            `
-            active = true;
-            console.log('BruteForce starting...');
-            go(document.getElementById('UserName').value);
-            `});
+        chrome.tabs.executeScript(tabs[0].id, { code: `active = true; console.log('BruteForce starting...'); go(document.getElementById('UserName').value);`});
       }
     });
   }
